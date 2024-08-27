@@ -3,13 +3,9 @@ import '/flutter_flow/flutter_flow_animations.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:flutter/scheduler.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:provider/provider.dart';
 import 'auth1_model.dart';
 export 'auth1_model.dart';
 
@@ -66,15 +62,15 @@ class _Auth1WidgetState extends State<Auth1Widget>
             curve: Curves.easeInOut,
             delay: 0.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 80.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 80.0),
+            end: const Offset(0.0, 0.0),
           ),
           ScaleEffect(
             curve: Curves.easeInOut,
             delay: 150.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.8, 0.8),
-            end: Offset(1.0, 1.0),
+            begin: const Offset(0.8, 0.8),
+            end: const Offset(1.0, 1.0),
           ),
         ],
       ),
@@ -93,8 +89,8 @@ class _Auth1WidgetState extends State<Auth1Widget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -113,8 +109,8 @@ class _Auth1WidgetState extends State<Auth1Widget>
             curve: Curves.easeInOut,
             delay: 300.0.ms,
             duration: 400.0.ms,
-            begin: Offset(0.0, 20.0),
-            end: Offset(0.0, 0.0),
+            begin: const Offset(0.0, 20.0),
+            end: const Offset(0.0, 0.0),
           ),
         ],
       ),
@@ -140,7 +136,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
           child: Stack(
             children: [
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(32.0, 12.0, 32.0, 32.0),
+                padding: const EdgeInsetsDirectional.fromSTEB(32.0, 12.0, 32.0, 32.0),
                 child: Container(
                   width: double.infinity,
                   height: 230.0,
@@ -154,10 +150,10 @@ class _Auth1WidgetState extends State<Auth1Widget>
                     ),
                     borderRadius: BorderRadius.circular(16.0),
                   ),
-                  alignment: AlignmentDirectional(0.0, 0.0),
+                  alignment: const AlignmentDirectional(0.0, 0.0),
                   child: Padding(
                     padding:
-                        EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 72.0),
+                        const EdgeInsetsDirectional.fromSTEB(0.0, 0.0, 0.0, 72.0),
                     child: Text(
                       'Supergigs.ai',
                       style: FlutterFlowTheme.of(context).displaySmall.override(
@@ -169,28 +165,28 @@ class _Auth1WidgetState extends State<Auth1Widget>
                 ),
               ),
               Align(
-                alignment: AlignmentDirectional(0.0, -1.0),
+                alignment: const AlignmentDirectional(0.0, -1.0),
                 child: Padding(
-                  padding: EdgeInsetsDirectional.fromSTEB(0.0, 170.0, 0.0, 0.0),
+                  padding: const EdgeInsetsDirectional.fromSTEB(0.0, 170.0, 0.0, 0.0),
                   child: SingleChildScrollView(
                     child: Column(
                       mainAxisSize: MainAxisSize.max,
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         Padding(
-                          padding: EdgeInsets.all(12.0),
+                          padding: const EdgeInsets.all(12.0),
                           child: Container(
                             width: double.infinity,
                             height: MediaQuery.sizeOf(context).width >= 768.0
                                 ? 530.0
                                 : 630.0,
-                            constraints: BoxConstraints(
+                            constraints: const BoxConstraints(
                               maxWidth: 570.0,
                             ),
                             decoration: BoxDecoration(
                               color: FlutterFlowTheme.of(context)
                                   .secondaryBackground,
-                              boxShadow: [
+                              boxShadow: const [
                                 BoxShadow(
                                   blurRadius: 4.0,
                                   color: Color(0x33000000),
@@ -208,12 +204,12 @@ class _Auth1WidgetState extends State<Auth1Widget>
                               ),
                             ),
                             child: Padding(
-                              padding: EdgeInsetsDirectional.fromSTEB(
+                              padding: const EdgeInsetsDirectional.fromSTEB(
                                   0.0, 12.0, 0.0, 0.0),
                               child: Column(
                                 children: [
                                   Align(
-                                    alignment: Alignment(0.0, 0),
+                                    alignment: const Alignment(0.0, 0),
                                     child: TabBar(
                                       isScrollable: true,
                                       labelColor: FlutterFlowTheme.of(context)
@@ -222,7 +218,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                           FlutterFlowTheme.of(context)
                                               .secondaryText,
                                       labelPadding:
-                                          EdgeInsetsDirectional.fromSTEB(
+                                          const EdgeInsetsDirectional.fromSTEB(
                                               32.0, 0.0, 32.0, 0.0),
                                       labelStyle: FlutterFlowTheme.of(context)
                                           .titleMedium
@@ -240,7 +236,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                       indicatorColor:
                                           FlutterFlowTheme.of(context).primary,
                                       indicatorWeight: 3.0,
-                                      tabs: [
+                                      tabs: const [
                                         Tab(
                                           text: 'Create Account',
                                         ),
@@ -260,10 +256,10 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                       children: [
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 16.0, 24.0, 0.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -298,7 +294,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 0.0, 24.0),
                                                     child: Text(
@@ -317,10 +313,10 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 16.0),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -328,7 +324,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                         focusNode: _model
                                                             .emailAddressCreateFocusNode,
                                                         autofocus: true,
-                                                        autofillHints: [
+                                                        autofillHints: const [
                                                           AutofillHints.email
                                                         ],
                                                         obscureText: false,
@@ -406,7 +402,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           contentPadding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   24.0),
                                                         ),
                                                         style:
@@ -431,10 +427,10 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 16.0),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -442,7 +438,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                         focusNode: _model
                                                             .passwordCreateFocusNode,
                                                         autofocus: true,
-                                                        autofillHints: [
+                                                        autofillHints: const [
                                                           AutofillHints.password
                                                         ],
                                                         obscureText: !_model
@@ -521,7 +517,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           contentPadding:
-                                                              EdgeInsets.all(
+                                                              const EdgeInsets.all(
                                                                   24.0),
                                                           suffixIcon: InkWell(
                                                             onTap: () =>
@@ -566,11 +562,11 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -606,14 +602,14 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                           width: 230.0,
                                                           height: 52.0,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
                                                                       0.0,
                                                                       0.0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -636,7 +632,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
-                                                              BorderSide(
+                                                              const BorderSide(
                                                             color: Colors
                                                                 .transparent,
                                                             width: 1.0,
@@ -655,11 +651,11 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                     children: [
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       16.0,
                                                                       0.0,
@@ -683,11 +679,11 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                       ),
                                                       Align(
                                                         alignment:
-                                                            AlignmentDirectional(
+                                                            const AlignmentDirectional(
                                                                 0.0, 0.0),
                                                         child: Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -715,7 +711,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                             children: [
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -737,7 +733,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                       ScaffoldMessenger.of(
                                                                               context)
                                                                           .showSnackBar(
-                                                                        SnackBar(
+                                                                        const SnackBar(
                                                                           content:
                                                                               Text(
                                                                             'Passwords don\'t match!',
@@ -770,7 +766,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                   },
                                                                   text:
                                                                       'Continue with Google',
-                                                                  icon: FaIcon(
+                                                                  icon: const FaIcon(
                                                                     FontAwesomeIcons
                                                                         .google,
                                                                     size: 20.0,
@@ -781,14 +777,14 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                         230.0,
                                                                     height:
                                                                         44.0,
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
                                                                     iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -828,7 +824,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                               ),
                                                               Padding(
                                                                 padding:
-                                                                    EdgeInsetsDirectional
+                                                                    const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
@@ -865,7 +861,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                   },
                                                                   text:
                                                                       'Continue with Apple',
-                                                                  icon: FaIcon(
+                                                                  icon: const FaIcon(
                                                                     FontAwesomeIcons
                                                                         .apple,
                                                                     size: 20.0,
@@ -876,14 +872,14 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                         230.0,
                                                                     height:
                                                                         44.0,
-                                                                    padding: EdgeInsetsDirectional
+                                                                    padding: const EdgeInsetsDirectional
                                                                         .fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
                                                                             0.0),
                                                                     iconPadding:
-                                                                        EdgeInsetsDirectional.fromSTEB(
+                                                                        const EdgeInsetsDirectional.fromSTEB(
                                                                             0.0,
                                                                             0.0,
                                                                             0.0,
@@ -935,10 +931,10 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                         ),
                                         Align(
                                           alignment:
-                                              AlignmentDirectional(0.0, -1.0),
+                                              const AlignmentDirectional(0.0, -1.0),
                                           child: Padding(
                                             padding:
-                                                EdgeInsetsDirectional.fromSTEB(
+                                                const EdgeInsetsDirectional.fromSTEB(
                                                     24.0, 16.0, 24.0, 0.0),
                                             child: SingleChildScrollView(
                                               child: Column(
@@ -973,7 +969,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 4.0,
                                                                 0.0, 24.0),
                                                     child: Text(
@@ -992,10 +988,10 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 16.0),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -1003,7 +999,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                         focusNode: _model
                                                             .emailAddressFocusNode,
                                                         autofocus: true,
-                                                        autofillHints: [
+                                                        autofillHints: const [
                                                           AutofillHints.email
                                                         ],
                                                         obscureText: false,
@@ -1081,7 +1077,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           contentPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       24.0,
                                                                       24.0,
@@ -1110,10 +1106,10 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Padding(
                                                     padding:
-                                                        EdgeInsetsDirectional
+                                                        const EdgeInsetsDirectional
                                                             .fromSTEB(0.0, 0.0,
                                                                 0.0, 16.0),
-                                                    child: Container(
+                                                    child: SizedBox(
                                                       width: double.infinity,
                                                       child: TextFormField(
                                                         controller: _model
@@ -1121,7 +1117,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                         focusNode: _model
                                                             .passwordFocusNode,
                                                         autofocus: true,
-                                                        autofillHints: [
+                                                        autofillHints: const [
                                                           AutofillHints.password
                                                         ],
                                                         obscureText: !_model
@@ -1200,7 +1196,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                   .of(context)
                                                               .secondaryBackground,
                                                           contentPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       24.0,
                                                                       24.0,
@@ -1249,11 +1245,11 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -1289,14 +1285,14 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                           width: 230.0,
                                                           height: 52.0,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
                                                                       0.0,
                                                                       0.0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -1319,7 +1315,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                   ),
                                                           elevation: 3.0,
                                                           borderSide:
-                                                              BorderSide(
+                                                              const BorderSide(
                                                             color: Colors
                                                                 .transparent,
                                                             width: 1.0,
@@ -1334,11 +1330,11 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   16.0,
                                                                   0.0,
@@ -1363,7 +1359,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Wrap(
                                                       spacing: 16.0,
@@ -1384,7 +1380,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                       children: [
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -1398,7 +1394,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                             },
                                                             text:
                                                                 'Continue with Google',
-                                                            icon: FaIcon(
+                                                            icon: const FaIcon(
                                                               FontAwesomeIcons
                                                                   .google,
                                                               size: 20.0,
@@ -1408,14 +1404,14 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                               width: 230.0,
                                                               height: 44.0,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -1457,7 +1453,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                         ),
                                                         Padding(
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,
@@ -1478,7 +1474,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                                 ScaffoldMessenger.of(
                                                                         context)
                                                                     .showSnackBar(
-                                                                  SnackBar(
+                                                                  const SnackBar(
                                                                     content:
                                                                         Text(
                                                                       'Passwords don\'t match!',
@@ -1511,7 +1507,7 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                             },
                                                             text:
                                                                 'Continue with Apple',
-                                                            icon: FaIcon(
+                                                            icon: const FaIcon(
                                                               FontAwesomeIcons
                                                                   .apple,
                                                               size: 20.0,
@@ -1521,14 +1517,14 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                               width: 230.0,
                                                               height: 44.0,
                                                               padding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
                                                                           0.0,
                                                                           0.0),
                                                               iconPadding:
-                                                                  EdgeInsetsDirectional
+                                                                  const EdgeInsetsDirectional
                                                                       .fromSTEB(
                                                                           0.0,
                                                                           0.0,
@@ -1573,11 +1569,11 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                   ),
                                                   Align(
                                                     alignment:
-                                                        AlignmentDirectional(
+                                                        const AlignmentDirectional(
                                                             0.0, 0.0),
                                                     child: Padding(
                                                       padding:
-                                                          EdgeInsetsDirectional
+                                                          const EdgeInsetsDirectional
                                                               .fromSTEB(
                                                                   0.0,
                                                                   0.0,
@@ -1613,14 +1609,14 @@ class _Auth1WidgetState extends State<Auth1Widget>
                                                             FFButtonOptions(
                                                           height: 44.0,
                                                           padding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       32.0,
                                                                       0.0,
                                                                       32.0,
                                                                       0.0),
                                                           iconPadding:
-                                                              EdgeInsetsDirectional
+                                                              const EdgeInsetsDirectional
                                                                   .fromSTEB(
                                                                       0.0,
                                                                       0.0,

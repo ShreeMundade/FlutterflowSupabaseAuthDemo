@@ -9,7 +9,7 @@ class PostsTable extends SupabaseTable<PostsRow> {
 }
 
 class PostsRow extends SupabaseDataRow {
-  PostsRow(Map<String, dynamic> data) : super(data);
+  PostsRow(super.data);
 
   @override
   SupabaseTable get table => PostsTable();
@@ -20,8 +20,8 @@ class PostsRow extends SupabaseDataRow {
   String get title => getField<String>('title')!;
   set title(String value) => setField<String>('title', value);
 
-  dynamic? get featuredImages => getField<dynamic>('featured_images');
-  set featuredImages(dynamic? value) =>
+  dynamic get featuredImages => getField<dynamic>('featured_images');
+  set featuredImages(dynamic value) =>
       setField<dynamic>('featured_images', value);
 
   String get slug => getField<String>('slug')!;
